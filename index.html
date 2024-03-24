@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <script src="script.js" defer></script>
+    <title>HIGHCAST</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="nav_bar">
+        <ul>
+          <li><a href="/" id="logo">HIGHCAST</a></li>
+          <li>
+            <button id="changeTheme"><strong>Переключить тему</strong></button>
+          </li>
+        </ul>
+        <hr />
+        <br />
+        <form id="myForm">
+          <label for="lastName"><strong>Фамилия:</strong></label>
+          <input type="text" id="lastName" name="lastName" /><br /><br />
+
+          <label for="firstName"><strong>Имя:</strong></label>
+          <input type="text" id="firstName" name="firstName" /><br /><br />
+
+          <label for="email"><strong>Электронная почта:</strong></label>
+          <input type="email" id="email" name="email" /><br /><br />
+
+          <label for="phone"><strong>Телефон:</strong></label>
+          <input type="text" id="phone" name="phone" /><br /><br />
+
+          <button type="button" onclick="showData()">
+            <strong>Отправить</strong>
+          </button>
+        </form>
+
+        <div id="output"></div>
+      </div>
+    </div>
+  </body>
+</html>
